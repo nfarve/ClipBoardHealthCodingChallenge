@@ -1,3 +1,4 @@
 pandas>=0.19.2
 numpy>=1.12.1
 pymongo>=3.4.0
+geopy>=1.11.0

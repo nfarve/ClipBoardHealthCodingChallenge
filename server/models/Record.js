@@ -12,7 +12,7 @@ const Record = new Schema({
   experience: Number,
   department: String,
   patientNurseRatio: Number,
-  createdAt: Date,
+  createdAt: {type: Date, default: Date.now}
 });
 
 export default mongoose.model('records', Record);
