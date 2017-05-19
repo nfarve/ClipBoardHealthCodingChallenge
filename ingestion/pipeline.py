@@ -171,7 +171,7 @@ def main():
     db = client['clipboardinterview']
     df = pd.read_csv(join(dirname(__file__), '../data/projectnurse.csv'))
     # print df[department]
-    posts = db.posts
+    posts = db.records
     for index, row in df.iterrows():
       s = float(reformatWage(row[wage]))
       r = reformatRatio(row[ratio])
